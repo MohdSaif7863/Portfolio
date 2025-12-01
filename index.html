@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta  charset="UTF-8" />
-    <link  rel="icon" type="public/jpg" href="saif1.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <meta charset="UTF-8" />
+
+    <!-- Original icon (will be replaced by JS) -->
+    <link id="dynamicFavicon" rel="icon" type="image/png" href="saif1.jpg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saif_Protfolio</title>
+
+    <!-- Circular Favicon Script -->
+    <script>
+      (function () {
+        const img = new Image();
+        img.src = "saif1.jpg";
+
+        img.onload = function () {
+          const size = 128;
+          const canvas = document.createElement("canvas");
+          canvas.width = size;
+          canvas.height = size;
+
+          const ctx = canvas.getContext("2d");
+
+          // Circle mask
+          ctx.beginPath();
+          ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+          ctx.closePath();
+          ctx.clip();
+
+          // Draw image inside circular mask
+          ctx.drawImage(img, 0, 0, size, size);
+
+          // Convert to PNG base64
+          const circleIcon = canvas.toDataURL("image/png");
+
+          // Replace favicon
+          const link = document.getElementById("dynamicFavicon");
+          link.href = circleIcon;
+        };
+      })();
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

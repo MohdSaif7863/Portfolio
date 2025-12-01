@@ -15,7 +15,7 @@ const Contact = () => {
               Let's Talk
             </h3>
             <p>
-              I'm open to discussing web development prjectgs or partnership
+              I'm open to discussing web development projects or partnership
               opportunities.
             </p>
             <div className="mb-4 mt-8">

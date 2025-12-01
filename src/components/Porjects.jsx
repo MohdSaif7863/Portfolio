@@ -8,21 +8,21 @@ const projects = [
     name: "Employee MS",
     technologies: "MERN Stack",
     image: employeeMSImage,
-    github: "#",
+    github: "https://github.com/MohdSaif7863/Employee-Management-System",
   },
   {
     id: 2,
     name: "Blog App",
     technologies: "MERN Stack",
     image: bookMSImage,
-    github: "#",
+    github: "https://github.com/MohdSaif7863/MCQ-Questions",
   },
   {
     id: 3,
     name: "Book MS",
     technologies: "MERN Stack",
     image: employeeMSImage,
-    github: "#",
+    github: "https://github.com/MohdSaif7863/Employee-Management-System",
   },
 ];
 
