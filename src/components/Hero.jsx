@@ -28,7 +28,7 @@ const Hero = () => {
 
       <div className="mt-8 space-x-4">
         <a
-          href="mailto:saif@example.com"
+          href="mailto:mohdsaif5725@gmail.com"
           className="bg-gradient-to-r from-green-400 to-blue-500 text-white
             transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
         >
